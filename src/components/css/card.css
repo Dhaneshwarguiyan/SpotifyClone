@@ -1,0 +1,21 @@
+.card{
+    display: flex;
+    flex-direction: column;
+}:hover{
+
+}
+.card img{
+    height: 150px;
+    width: 150px;
+}
+.card h1{
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+
+}
+.card p{
+    font-size: 12px;
+    width: 180px;
+    color: var(--lightText);
+}

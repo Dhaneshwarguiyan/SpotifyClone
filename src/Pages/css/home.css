@@ -1,0 +1,18 @@
+.body-greet{
+    font-size: 37px;
+    color: white;
+    font-weight: 700;
+}
+.header{
+    height: 83vh;
+    width: 77vw;
+    overflow: scroll;
+    
+}
+
+.fav-artists{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    margin: 10px 0px;
+    overflow: hidden;
+}

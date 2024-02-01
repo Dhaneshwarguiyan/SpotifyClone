@@ -1,0 +1,26 @@
+.track{
+    display: grid;
+    grid-template-columns: 1fr 1fr 10fr;
+    color: white;
+    padding: 10px 0px;
+    transition: 0.3s;
+}
+.track:hover{
+    background: rgba(182, 169, 169, 0.3);
+}
+.track-count{
+    font-size: 25px;
+    padding: 15px 40px;
+}
+.track-img img{
+    height: 80px;
+}
+.track-name{
+    font-size: 18px;
+}
+.track-names{
+    font-size: 15px;
+    color: var(--lightText);
+    display: flex;
+    gap: 5px;
+}

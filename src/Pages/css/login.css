@@ -1,0 +1,29 @@
+.login-pg{
+    background: var(--green);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.login-pg img{
+    height: 300px;
+}
+
+.login-txt{
+    background: var(--white);
+    border: none;
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.login-txt:hover{
+    color: var(--green);
+}

@@ -1,0 +1,29 @@
+.playlist-main{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+   
+}
+.playlist-card{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    background: rgba(18, 18, 18, 0.2);
+    transition: 0.3s;
+    margin: 5px;
+    padding: 10px 5px;
+
+}
+.playlist-card:hover{
+    background: rgba(18, 18, 18, 0.5);
+}
+.playlist-card img{
+    height: 50px;
+}
+.playlist-name{
+    font-weight: 400;
+    color: white;
+    font-size: 16px;
+}

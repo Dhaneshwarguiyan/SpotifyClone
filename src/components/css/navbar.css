@@ -1,0 +1,23 @@
+/* .top-bar{ */
+    /* position: absolute; */
+    /* background-color: transparent; */
+    /* height: 0px; */
+    /* border-radius: 7px; */
+/* } */
+.arrow{
+    margin-top: 24px;
+    display: flex;
+    color: rgb(235, 228, 228);
+}
+.top-items{
+    margin-left: 40px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.img{
+    height: 40px;
+    width: 40px;
+    background: white;
+    border-radius: 50px;
+}
