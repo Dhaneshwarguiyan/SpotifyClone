@@ -6,7 +6,7 @@
 .artist-dtl{
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     color: white;
 }
 .artist-type{
@@ -26,7 +26,7 @@
     height: 250px;
 }
 .artist-track{
-    height: 415px;
+    height: 55vh;
 }
 .artist{
     overflow: scroll;

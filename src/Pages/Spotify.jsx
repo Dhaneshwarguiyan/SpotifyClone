@@ -16,9 +16,6 @@ export default function Spotify() {
         <li className='main-body'>
             <Body />
         </li>
-        <li className='footer'>
-            <Footer />
-        </li>
       </ul>
     </div>
   )

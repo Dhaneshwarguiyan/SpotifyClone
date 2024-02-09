@@ -46,7 +46,7 @@
 }
 
 .lib{
-    height: 80%;
+    height: 90%;
     background: var(--lightBlack);
     border-radius: 5px;
     color: var(--lightText);
@@ -68,7 +68,7 @@
 }
 .lib-playlist{
     overflow: auto;
-    height: 64vh; 
+    height: 75vh; 
 }
 .lib-playlist::-webkit-scrollbar{
     display: block;
