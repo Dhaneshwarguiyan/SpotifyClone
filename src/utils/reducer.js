@@ -8,6 +8,7 @@ export const initialState = {
     artist:null,
     artistTracks:null,
     current_id:null,
+    playlistTracks:null,
 }
 
 const reducer=(state,action)=>{
@@ -46,6 +47,11 @@ const reducer=(state,action)=>{
             return{
                 ...state,
                 current_id:action.current_id,
+            }
+        case reducerCases.SET_PLAYLIST_TRACKS:
+            return{
+                ...state,
+                playlistTracks:action.playlistTracks
             }
         default:
             return state;

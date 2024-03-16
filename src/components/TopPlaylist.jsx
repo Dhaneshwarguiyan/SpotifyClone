@@ -34,9 +34,9 @@ export default function TopPlaylist() {
 
         getFav();
         getProfile();
-    },[token,dispatch]);
+      },[token,dispatch]);
     const topPlaylistCard = playlists.map((card)=>{
-        return <TopPlaylistCard key={card.id} image={card.images[0].url} name = {card.name}/>
+        return <TopPlaylistCard key={card.id} image={card.images[0].url} name = {card.name} playlistId={card.id}/>
     });
   return (
     <div className="playlist-main">

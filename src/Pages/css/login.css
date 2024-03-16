@@ -27,3 +27,17 @@
 .login-txt:hover{
     color: var(--green);
 }
+.clientId{
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+}
+.inputId{
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+.inst{
+    background: white;
+    padding: 5px 20px;
+    border-radius: 8px;
+}

@@ -9,10 +9,8 @@ import Track from '../css/track/Track';
 const ArtistPage = () => {
     const [{token,artist,artistTracks,current_id},dispatch] = useStateProvider();
     const {artistId} = useParams();
-    // dispatch({type:reducerCases.SET_CURRENT_ID,current_id:artistId});
-  
+
   useEffect(()=>{
-    console.log("useEffect");
   const getArtist = async () =>{
     const data1 = await fetch(`https://api.spotify.com/v1/artists/${artistId}`,{
       method:"GET",
@@ -30,7 +28,6 @@ const ArtistPage = () => {
     });
     const items2 =  await data2.json();
     dispatch({type:reducerCases.SET_ARTIST_TRACKS,artistTracks:items2.items})
-    console.log(artistTracks);
   }
   getArtist();
     },[token,dispatch,current_id]);
@@ -58,7 +55,7 @@ const ArtistPage = () => {
             
             {artistTracks ? artistTracks.map((artistTrack)=>{ 
               count = count+1;
-              return(<Track key={artistTrack.id} count={count} artistTrack={artistTrack}/>)}) : <div>false..</div> }
+              return(<Track key={artistTrack.id} count={count} artistTrack={artistTrack} type={true}/>)}) : <div>false..</div> }
           </li>
           </ul> : 
           <div>false</div>

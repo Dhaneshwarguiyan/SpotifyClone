@@ -8,7 +8,7 @@ export default function BodyRecentPlalist() {
     <div className='body-top-playlist'>
       {
         playlists.slice(0,6).map((playlist)=>{
-            return <TopPlaylistCard key={playlist.id} image={playlist.images[0].url} name={playlist.name}/>
+            return <TopPlaylistCard key={playlist.id} image={playlist.images[0].url} name={playlist.name} playlistId={playlist.id}/>
         })
       }
     </div>

@@ -34,11 +34,16 @@ export default function Login(){
     return(
         <div className="login-pg">
         <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Black.png" alt="Spotify logo" />
+        <p className='inst'>
+            Step 1: Go to <a href="https://developer.spotify.com/">https://developer.spotify.com/</a><br />
+            Step 2: Login and then go to dashboard <br />
+            Step 3: Create a new app <br />
+            Step 4: Go to settings in the dashboard
+            Step 5: Copy and paste the client id
+        </p>
+        <p className='clientId'>Client Id</p>
         <form >
-            <label>
-                Client Id
-                <input type="text" value={client_id} onChange={handleChange}/>
-            </label>
+                <input className='inputId' type="text" value={client_id} onChange={handleChange}/>
         </form>
          <div className='login-txt' onClick={clickHandler}>Login to spotify</div>
         </div>
