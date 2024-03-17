@@ -4,11 +4,12 @@ import { Link } from 'react-router-dom';
 
 export default function Card({artists}) {
   return (
+    <Link to={`/artist/${artists.id}`}>
     <div className='card'>
-      <Link to={`/artist/${artists.id}`}><img src={artists.images[1].url} alt="Artists image: " /></Link>
-        <h1>{artists.name}</h1>
-        <p>{artists.genres[0]}  
-        </p>
+      <img src={artists?.images[0]?.url} alt="Artists image: " />
+        <h1>{artists?.name}</h1>
+        <p>{artists?.genres[0]}</p>
     </div>
+    </Link>
   )
 }

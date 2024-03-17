@@ -19,6 +19,7 @@ const ArtistPage = () => {
       },
     });
     const items1 =  await data1.json();
+    console.log(items1)
     dispatch({type:reducerCases.SET_ARTIST,artist:items1});
     const data2 = await fetch(`https://api.spotify.com/v1/artists/${artistId}/albums`,{
       method:"GET",
@@ -39,12 +40,12 @@ const ArtistPage = () => {
             <ul className='artist-album'>
             <li className='artist-header'>
             <div className='artist-img'>
-              {<img src={artist.images[0].url}/>}
+              {<img src={artist?.images[0].url}/>}
             </div>
             <div className='artist-dtl'>
               <div className='artist-type'>{artist.type}</div>
               <div className='artist-name'> 
-               This is {artist.name}
+               This is {artist?.name}
               </div>
               <div className='artist-genres'>
                 {artist.genres}
