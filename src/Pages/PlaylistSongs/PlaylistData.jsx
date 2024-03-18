@@ -22,7 +22,7 @@ const PlaylistData = () => {
      dispatch({type:reducerCases.SET_PLAYLIST_TRACKS,playlistTracks:items2.items})
    }
    getPlaylist();
-     },[token,dispatch]);
+     },[token,dispatch,playlistId]);
     let count = 0;
     let playlist = playlists.filter((playlist)=>(
          playlist.id === playlistId
@@ -34,7 +34,7 @@ const PlaylistData = () => {
          <ul className='artist-album'>
          <li className='artist-header'>
          <div className='artist-img'>
-           {<img src={playlist[0].images[0].url}/>}
+           {<img src={playlist[0].images[0].url} alt='Artist imgage'/>}
          </div>
          <div className='artist-dtl'>
            <div className='artist-type'>{playlist[0].type}</div>

@@ -7,7 +7,7 @@ import Track from '../css/track/Track';
 
 
 const ArtistPage = () => {
-    const [{token,artist,artistTracks,current_id},dispatch] = useStateProvider();
+    const [{token,artist,artistTracks},dispatch] = useStateProvider();
     const {artistId} = useParams();
 
   useEffect(()=>{
@@ -31,7 +31,7 @@ const ArtistPage = () => {
     dispatch({type:reducerCases.SET_ARTIST_TRACKS,artistTracks:items2.items})
   }
   getArtist();
-    },[token,dispatch,current_id]);
+    },[token,dispatch]);
     let count = 0;
   return (
       <div className='artist'>
@@ -40,7 +40,7 @@ const ArtistPage = () => {
             <ul className='artist-album'>
             <li className='artist-header'>
             <div className='artist-img'>
-              {<img src={artist?.images[0].url}/>}
+              {<img src={artist?.images[0].url } alt="Artist image"/>}
             </div>
             <div className='artist-dtl'>
               <div className='artist-type'>{artist.type}</div>

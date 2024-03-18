@@ -1,7 +1,7 @@
 import { BiChevronLeftCircle } from "react-icons/bi";
 import { BiChevronRightCircle } from "react-icons/bi";
 import './css/navbar.css';
-import { useState ,useEffect} from "react";
+import { useState} from "react";
 import { useStateProvider } from "../utils/StateProvider";
 
 
